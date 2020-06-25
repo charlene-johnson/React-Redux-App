@@ -1,19 +1,19 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { getPic } from '../actions/actions';
 
 const Foxes = (props) => {
-    useEffect(() => {
-        getPic();
-    });
-
+    
     if (props.isFetching) {
         return <h2>Fetching Beautiful Foxes for you...</h2>
     }
 
     return (
         <>
+        <div>
         <button onClick = {() => props.getPic()}>Click for more Foxes</button>
+        <img src={props.picture}/>
+        </div>
         </>
     )
 };
