@@ -1,8 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getPic } from '../actions/actions';
+import { getPic} from '../actions/actions';
+
 
 const Foxes = (props) => {
+
     
     if (props.isFetching) {
         return <h2>Fetching Beautiful Foxes for you...</h2>
@@ -10,9 +12,9 @@ const Foxes = (props) => {
 
     return (
         <>
-        <div>
-        <button onClick = {() => props.getPic()}>Click for more Foxes</button>
-        <img src={props.picture}/>
+        <div className="Fox-div">
+            <img src={props.picture}/>
+            <button onClick = {() => props.getPic()}>Click for more Foxes</button>
         </div>
         </>
     )

@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background: url('./img/autumn_transparent.png')
+}
+
+img {
+  max-width: 1000px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 1px solid orange;
+  background: linear-gradient(to right, #FF8800, #7F4400);
+
+}
+button {
+  background: orange;
+  padding: 1%;
+  border: orange;
+  border-radius: 5px;
+  margin: 1%;
+  color: #402200;
+  font-size: 18px;
+  font-family: 'Pacifico', cursive;
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Pacifico', cursive;
+  color: #402200;
+}

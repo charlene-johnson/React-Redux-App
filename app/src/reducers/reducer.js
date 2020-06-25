@@ -1,4 +1,4 @@
-import {FETCHING_FOXES_START, FETCHING_FOXES_SUCCESS} from "../actions/actions";
+import {FETCHING_FOXES_START, FETCHING_FOXES_SUCCESS, } from "../actions/actions";
 
 const initialState = {
     loading: false,
